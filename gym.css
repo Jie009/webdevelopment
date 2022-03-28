@@ -1,0 +1,218 @@
+/*Gym Accessories*/
+#gym_title {
+    background-image: url('images/gym_background.jpg');  /*  <--change image */
+    text-align: center;
+    height:550px;
+    background-size: cover;
+    margin:0;
+    margin-left:-8px;
+    margin-right:-8px;
+    color:white;
+    display:flex;
+    justify-content: center; /*make the word at the center*/
+    align-items: center; /*make the word at the center*/
+    font-size:3.5em;
+    text-shadow: 0 0 10px black;
+    font-family:'Russo One', sans-serif;
+}
+
+#caption {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #363E3B;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#filter {
+    background:linear-gradient(whitesmoke,#dedede,whitesmoke);
+    border-top: #c41330 solid 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    text-align: center;
+    height: 520px;
+    width:220px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    top: 120px;
+    border-radius: 10px 10px 0 0;
+}
+
+#categories_title{
+    background-color: #c41330;
+    color:white;
+    margin-top: -1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#categories{
+    text-align: center;
+    font-size: 22px;
+    line-height: 60px;   
+    cursor: pointer; 
+}
+
+#categories a:link{
+    color:black;
+}
+
+#categories a:visited{
+    color:black;
+}
+
+#c_protein:hover,#c_bars:hover,#c_vit:hover,#c_shakers:hover,#c_strength:hover,#c_bench:hover,#c_mat:hover,#c_accessories:hover{
+    background-color: #484e4c;
+    color: white;
+}
+
+#top{
+    background-color: #c41330;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: #c41330;
+    margin-left: 400px;
+    margin-right: 70px;
+    border-bottom: #363E3B solid 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 155px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 450px;
+}
+
+.content {
+    height: 470px;
+    width: 320px;
+    background-color: white;
+}
+
+.content:hover {
+    background-color: whitesmoke;
+}
+
+.img {
+    position: relative;
+}
+
+.img .gymdetail{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.img:hover .gymdetail {
+    opacity: 1;
+}
+
+.gymimage, .gymdetail{
+    height: 250px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: transparent;
+}
+
+.gymname {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+.gymweight {
+    font-size: 12px;
+}
+
+.gymprice {
+    font-family: 'Poppins', sans-serif;
+    color: darkslategrey;
+    font-size: 18px;
+    padding-left: 35px;
+    padding-right: 20px;
+    margin-top: -25px;
+    font-style: normal;
+}
+
+.comment {
+    color: #ff9e25;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 20px;
+    width: 80px;
+    padding-left: 37px;
+    padding-right: 37px;
+    opacity: 0;
+}
+
+.content:hover .comment{
+    opacity: 1;
+}
+
+button{
+    color: white;
+    background-color: #c41330;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: none;
+    height: 40px;
+    width: 155px;
+    margin-left: 35px;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button::after,#top::after{
+    content:'';
+    position:absolute;
+    margin-top: 0px;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#AB001F;
+    z-index:-1;
+    transform: scaleX(0);
+    transform-origin:right ;
+    transition: transform 200ms ease-in
+}
+
+button:hover::after,#top:hover::after{
+    transform: scaleX(1);
+    transform-origin:left ;
+}
+
+.cart {
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}

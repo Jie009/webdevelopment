@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Chia Ser Yong, Liew Yee Jie, Bryan See Jin Jeng">
+        <title>My Gym-Homepage</title> <!--title of website-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="images/logo.ico"> <!--icon beside title-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--import font from google api-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet"> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="This is a logo"></a>
+            <div id="header_title">My Gym</div>
+            <a href="signin.html">
+                <div id="sign_in">Sign In</div>
+            </a>
+        </header>
+        <nav>
+            <a href="signin.html"><div id="join">Join Now!!!</div></a>
+            <div id="nav_title">My Gym</div>
+            <ul>
+                <li ><a class="link" href="index.html">Home</a></li> 
+                <li class="link"><a href="programme.html">Programme</a></li> 
+                <li class="link"><a href="nutrition.html">Nutrition</a></li> 
+                <li class="link"><a href="gym.html">Gym Equipment</a></li> 
+                <li class="link"><a href="about.html">About Us</a></li> 
+            </ul>
+        </nav>
+        <main>
+            <h1 id="index_title">Welcome To My Gym</h1>
+            <div class="index_choose">
+                <div id="index_choose_text">
+                    <h1>Why Choose Us?</h1>
+                    <ol id="index_choose_list">
+                        <li>We customize every workout to help you reach your goals.</li>
+                        <li>With our personalized workout programs, you can burn calories quickly and achieve your own personal goals.</li>
+                    </ol>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="index_programme">
+                <p id="index_programme_text">We Have What You Need</p>
+                <p class="index_programme_text2">Whether you&rsquo;re just starting out or an old hand, you&rsquo;ll find what you need for your fitness journey.</p>
+                <br><br>
+                <div id="index_programme_list">
+                    <div id="index_programme_list1">
+                        <p class="index_programme_title">Gym</p>
+                        <p class="index_programme_text2" style=color:white>If you love the energy of group workouts, we have a class that&rsquo;ll fit you.</p><br>
+                        <button class="button" onclick="document.location='programme.html#programme_gym'">Find Out More</button>
+                    </div>
+                    <div id="index_programme_list2">
+                        <p class="index_programme_title">Yoga</p>
+                        <p class="index_programme_text2" style=color:white>Our clubs have fitness equipment to take your workout to the next level.</p><br>
+                        <button class="button" onclick="document.location='programme.html#programme_yoga'">Find Out More</button>
+                    </div>
+                    <div id="index_programme_list3">
+                        <p class="index_programme_title">Boxing</p>
+                        <p class="index_programme_text2" style=color:white>Looking for a class to fit your schedule? Our timetable is perfect for you.</p><br>
+                        <button class="button" onclick="document.location='programme.html#programme_boxing'">Find Out More</button>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="index_info">
+                <img id="index_nutrition_img" src="images/index_nutrition.jpg" alt="This is a nutrition image">
+                <div id="index_nutrition_text">
+                    <p class="index_info_title">Nutrition</p><br>
+                    <hr>
+                    <p class="index_info_text">Protein powders have become a staple in the nutritional regimens of competitive athletes and recreational gym-goers alike.<br>These products serve as a convenient and high quality source of protein. </p>
+                    <button class="button" onclick="document.location='nutrition.html'">Find Out More</button>
+                </div>
+            </div>
+            <div class="index_info2">
+                <img id="index_gym_img" src="images/index_gym2.jpg" alt="This is a gym accessories image">
+                <div id="index_gym_text">
+                    <p class="index_info_title">Gym Equipment</p><br>
+                    <hr>
+                    <p class="index_info_text">For those who want to gain optimal muscle strength, external resistance is required, which enables the person to improve their strength and achieve the desired outcome. </p>
+                    <button class="button" onclick="document.location='gym.html'">Find Out More</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </main>
+        <footer>
+            <div id="footer_destination">
+                <img id="destination_logo" src="images/destination_logo.png" alt="This is a destination logo"> Location
+                <p>13, Street Canvas, </p>
+                <p>No 3 Jalan Kelima, Kuat</p>
+                <p>50480 Kuala Lumpur.</p>
+            </div>
+            <div id="footer_time">
+                <img id="time_img" src="images/clock_icon.png" alt="This is a clock icon"> &nbsp;Operation Time
+                <p>7am - 9pm (Mon-Fri)</p>
+                <p>9am - 3pm (Sat & Public Holiday)</p>
+                <p>Closed On Sundays</p>
+            </div>
+            <div id="footer_about">
+                <a href="about.html"><p>About Us</p></a> <!--link to about.html-->
+                <a href="mailto:mygym@gmail.com"><p>Contact Us For More Information</p></a> <!--link to email-->
+                Phone:&nbsp;<a href="tel:+6012-34567890">+6012-34567890</a> <!--link to telephone-->
+                <p>Terms and Condition | Privacy Policy</p>
+            </div>
+            <div id="footer_media">
+                <a href="http://www.instagram.com" target="blank"><img class="media_img" src="images/instagram_logo.png" alt="instagram_logo"></a> &nbsp; <!--target="blank" will open the website in a blank page-->
+                <a href="http://www.facebook.com" target="blank"><img class="media_img" src="images/facebook_logo.png" alt="facebook_logo"></a>
+            </div><br>
+            <audio id="audio" controls loop autoplay>  <!--audio-->
+                <source src="audio/Inspired-NEFFEX.mp3">
+                Your Browser does not support audio
+            </audio>
+            <!--javascript use to ask permission for autoplay music-->
+            <script>
+                function autoplay(){
+                    var r =confirm("Would You Like To AutoPlay Music?");
+                    if (r == true) {
+                        document.getElementById("audio").play();
+                    }
+                  }
+                </script>
+                <script>autoplay();</script> 
+        </footer>
+    </body>
+</html>

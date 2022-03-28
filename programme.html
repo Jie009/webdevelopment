@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Chia Ser Yong, Liew Yee Jie, Bryan See Jin Jeng">
+        <title>My Gym-Programme</title> <!--title of website-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="programme.css">
+        <link rel="icon" href="images/logo.ico"> <!--icon beside title-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--import font from google api-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet"> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="This is a logo"></a>
+            <div id="header_title">My Gym</div>
+            <a href="signin.html">
+                <div id="sign_in">Sign In</div>
+            </a>
+        </header>
+        <nav>
+            <a href="signin.html"><div id="join">Join Now!!!</div></a>
+            <div id="nav_title">My Gym</div>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="programme.html">Programme</a></li> 
+                <li><a href="nutrition.html">Nutrition</a></li> 
+                <li><a href="gym.html">Gym Equipment</a></li> 
+                <li><a href="about.html">About Us</a></li> 
+            </ul>
+        </nav>
+        <main>
+            <h1 id="programme_header_title">Programme</h1>
+            <div id="programme_offer"></div>
+                <img id="programme_offer_img" src="images/programme_offer.jpg" alt="This is a offer image">
+                <h1 id="programme_offer_text">For those who are 18 - 45 years old,</h1>
+                <p id="programme_offer_text2">Will receive great deal up to <span id="programme_offer_70">70%</span> &nbsp;discount!!!</p>
+                <a href="#price">
+                    <p id="programme_offer_explore">EXPLORE NOW</p>
+                </a>
+            <p class="programme_class_text">Our Classes</p>
+            <p class="programme_class_text2">Take your pick and start smashing your goals</p>
+            
+            <div class="programme"> 
+                <p class="programme_title" id="programme_gym">Gym</p>
+                <video class="programme_video" controls loop muted autoplay>
+                    <source src="videos/programme_video3.mp4" >  
+                </video>
+                <p class="programme_text"> Our MY GYM fitness centre caters for complete beginners to regular exercisers and offers the very best gym equipment available anywhere in Malaysia.<br><br>
+                We are a team of qualified and experienced fitness specialists who are always available to help you.</p>
+                <img class="programme_image" src="images/programme_gym1.jpg" alt="This is a gym image">
+                <img class="programme_image" src="images/programme_gym2.jpg" alt="This is a gym image">
+                <img class="programme_image" src="images/programme_gym3.jpg" alt="This is a gym image">
+                <span>Beginner</span>
+                <span>Intermidiate</span>
+                <span id="programme_yoga">Advanced</span>  <!--use for target-->
+            </div>
+            <div class="programme">
+                <p class="programme_title">Yoga</p>
+                <video class="programme_video" controls loop muted autoplay>
+                    <source src="videos/programme_video2.mp4" >  
+                </video>
+                <p class="programme_text">The beauty of yoga is that you don’t have to be a yogi or yogini to reap the benefits. <br><br>
+                Whether you are young or old, overweight or fit, yoga has the power to calm the mind and strengthen the body.</p>
+                <img class="programme_image" src="images/programme_yoga1.jpg" alt="This is a yoga image">
+                <img class="programme_image" src="images/programme_yoga3.jpg" alt="This is a yoga image">
+                <img class="programme_image" src="images/programme_yoga2.jpg" alt="This is a yoga image">
+                <span>Beginner</span>
+                <span>Intermidiate</span>
+                <span id="programme_boxing">Advanced</span> <!--use for target-->
+            </div>
+            <div class="programme"> 
+                <p class="programme_title">Boxing</p>
+                <video class="programme_video" controls loop muted autoplay>
+                    <source src="videos/programme_video1.mp4" >  
+                </video>
+                <p class="programme_text">Boxing is a sport that involves two people in a boxing ring wearing protective gloves and throwing punches at each other.<br><br>
+                But times have changed and boxing is now part of the fitness world.</p>
+                <img class="programme_image" src="images/programme_boxing1.jpg" alt="This is a boxing image">
+                <img class="programme_image" src="images/programme_boxing2.jpg" alt="This is a boxing image">
+                <img class="programme_image" src="images/programme_boxing3.jpg" alt="This is a boxing image">
+                <span>Beginner</span>
+                <span>Intermidiate</span>
+                <span>Advanced</span>
+            </div><br><br id="price">
+            <p class="programme_class_text">
+                Select your preferred options
+            </p>
+            <p class="programme_class_text2">
+                Choose from a variety of options catered to complement your fitness journey.
+            </p><br><br>
+
+            <div id="programme_price">
+                <div id="programme_price_list1">
+                    <p id="programme_price_title1">Basic</p>
+                    <p class="programme_price_text">RM8.<sup><small>00</small></sup>/day</p><br><br><br>
+                    <button class="button" onclick="document.location='signin.html'">Buy Now</button>
+                </div>
+                <div id="programme_price_list2">
+                    <p class="programme_suggest">Popular</p>
+                    <p class="programme_price_title2">Standard</p>
+                    <p class="programme_price_text">RM38.<sup><small>00</small></sup>/month</p>
+                    <p class="programme_price_ori">Original: <del>RM128.00</del></p>
+                    <button class="button" onclick="document.location='signin.html'">Buy Now</button>
+                </div>
+                <div id="programme_price_list3">
+                    <p class="programme_suggest">Recommend</p>
+                    <p class="programme_price_title2">Premium</p>
+                    <p class="programme_price_text">RM388.<sup><small>00</small></sup>/year</p>
+                    <p class="programme_price_ori">Original: <del>RM1288.00</del></p>
+                    <button class="button" onclick="document.location='signin.html'">Buy Now</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer_destination">
+                <img id="destination_logo" src="images/destination_logo.png" alt="This is a destination logo"> Location
+                <p>13, Street Canvas, </p>
+                <p>No 3 Jalan Kelima, Kuat</p>
+                <p>50480 Kuala Lumpur.</p>
+            </div>
+            <div id="footer_time">
+                <img id="time_img" src="images/clock_icon.png" alt="This is a clock icon"> &nbsp;Operation Time
+                <p>7am - 9pm (Mon-Fri)</p>
+                <p>9am - 3pm (Sat & Public Holiday)</p>
+                <p>Closed On Sundays</p>
+            </div>
+            <div id="footer_about">
+                <a href="about.html"><p>About Us</p></a> <!--link to about.html-->
+                <a href="mailto:mygym@gmail.com"><p>Contact Us For More Information</p></a> <!--link to email-->
+                Phone:&nbsp;<a href="tel:+6012-34567890">+6012-34567890</a> <!--link to telephone-->
+                <p>Terms and Condition | Privacy Policy</p>
+            </div>
+            <div id="footer_media">
+                <a href="http://www.instagram.com" target="blank"><img class="media_img" src="images/instagram_logo.png" alt="instagram_logo"></a> &nbsp; <!--target="blank" will open the website in a blank page-->
+                <a href="http://www.facebook.com" target="blank"><img class="media_img" src="images/facebook_logo.png" alt="facebook_logo"></a>
+            </div><br>
+            <audio controls loop autoplay>  <!--audio-->
+                <source src="audio/Inspired-NEFFEX.mp3">
+                Your Browser does not support audio
+            </audio>
+        </footer>
+    </body>
+</html>

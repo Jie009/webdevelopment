@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Chia Ser Yong, Liew Yee Jie, Bryan See Jin Jeng">
+        <title>My Gym-Sign In</title> <!--title of website-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="signin.css">
+        <link rel="icon" href="images/logo.ico"> <!--icon beside title-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--import font from google api-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet"> <!--import font from google api-->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="This is a logo"></a>
+            <div id="header_title">My Gym</div>
+            <a href="signin.html">
+                <div id="sign_in">Sign In</div>
+            </a>
+        </header>
+        <nav>
+            <a href="signin.html"><div id="join">Join Now!!!</div></a>
+            <div id="nav_title">My Gym</div>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="programme.html">Programme</a></li> 
+                <li><a href="nutrition.html">Nutrition</a></li> 
+                <li><a href="gym.html">Gym Equipment</a></li> 
+                <li><a href="about.html">About Us</a></li> 
+            </ul>
+        </nav>
+        <main>
+            <div id="signin">
+                <div id="signin_box">
+                    <div id="signin_title">Hello, Friend!<br><span id="signin_text">Enter your details and start journey with us</span>
+                    </div>
+                    <div id="signin_button">
+                        <div id="btn"></div>
+                            <button type="button" class="sigin_btn" onclick="register()">
+                                Register
+                            </button>
+                            <button type="button" class="sigin_btn" onclick="login()">
+                                Login
+                            </button>
+                    </div>
+                    <form class="signin_form" id="register">
+                        <label for="your_name">Your name:</label>&nbsp;
+                        <input type="text" id="your_name" placeholder="John Smith" required class="form_input"> <br><br>
+                        
+                        <label for="email1">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" class="form_input" id="email1" placeholder="your_name@gmail.com" required><br><br>
+
+                        <label for="pwd1">Password:</label>&nbsp;&nbsp;
+                        <input type="password" class="form_input" id="pwd1" required ><br><br>
+                        
+                        <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" id="age" required min="1" max="99" class="form_input"><br><br>
+                        
+                        <label>Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender"><br><br>
+
+                        <button type="submit" class="submit_btn">Register</button>
+                    </form>
+
+                    <form class="signin_form" id="login">
+                        <label for="email2">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" class="form_input" id="email2" placeholder="your_name@gmail.com" required><br><br>
+
+                        <label for="pwd2">Password:</label>&nbsp;&nbsp;
+                        <input type="password" class="form_input" id="pwd2" required><br><br>
+
+                        <input type="checkbox" class="checkbox"><span class="form_span">Remember Password</span><br><br>
+                        
+                        <input type="checkbox" class="checkbox"><span class="form_span">I agree with the Terms and Condition</span><br><br>
+
+                        <button type="submit" class="submit_btn">Login</button>
+                    </form>
+                </div>
+            </div>   <!--javascript--> <!--let the text move from right to left etc-->
+            <script>
+                var x= document.getElementById("register");
+                var y= document.getElementById("login");
+                var z= document.getElementById("btn");
+
+                function login(){
+                    x.style.left = "-400px";
+                    y.style.left = "10px";
+                    z.style.left = "150px"
+                }
+
+                function register(){
+                    x.style.left = "10px";
+                    y.style.left = "450px";
+                    z.style.left = "0px"
+                }
+
+            </script>
+        </main>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div id="footer_destination">
+                <img id="destination_logo" src="images/destination_logo.png" alt="This is a destination logo"> Location
+                <p>13, Street Canvas, </p>
+                <p>No 3 Jalan Kelima, Kuat</p>
+                <p>50480 Kuala Lumpur.</p>
+            </div>
+            <div id="footer_time">
+                <img id="time_img" src="images/clock_icon.png" alt="This is a clock icon"> &nbsp;Operation Time
+                <p>7am - 9pm (Mon-Fri)</p>
+                <p>9am - 3pm (Sat & Public Holiday)</p>
+                <p>Closed On Sundays</p>
+            </div>
+            <div id="footer_about">
+                <a href="about.html"><p>About Us</p></a> <!--link to about.html-->
+                <a href="mailto:mygym@gmail.com"><p>Contact Us For More Information</p></a> <!--link to email-->
+                Phone:&nbsp;<a href="tel:+6012-34567890">+6012-34567890</a> <!--link to telephone-->
+                <p>Terms and Condition | Privacy Policy</p>
+            </div>
+            <div id="footer_media">
+                <a href="http://www.instagram.com" target="blank"><img class="media_img" src="images/instagram_logo.png" alt="instagram_logo"></a> &nbsp; <!--target="blank" will open the website in a blank page-->
+                <a href="http://www.facebook.com" target="blank"><img class="media_img" src="images/facebook_logo.png" alt="facebook_logo"></a>
+            </div><br>
+            <audio controls loop autoplay>  <!--audio-->
+                <source src="audio/Inspired-NEFFEX.mp3">
+                Your Browser does not support audio
+            </audio>
+        </footer>
+    </body>
+</html>
